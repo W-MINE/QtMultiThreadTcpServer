@@ -13,7 +13,7 @@ Server::~Server()
 
 }
 
-void Server::incomingConnection(int sockDesc)
+void Server::incomingConnection(qintptr sockDesc)
 {
     m_socketList.append(sockDesc);
 

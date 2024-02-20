@@ -48,7 +48,7 @@ void Dialog::showDisconnection(int sockDesc)
     m_count--;
 
     /* refresh combobox */
-    ui->comboBoxObj->clear();
+    //ui->comboBoxObj->clear();
     int index = ui->comboBoxObj->findData(sockDesc);
 
     ui->comboBoxObj->removeItem(index);
@@ -97,7 +97,7 @@ void Dialog::sendDataSlot(void)
         emit sendData(ui->comboBoxObj->currentText().toInt(), ui->lineEditMsg->text().toLocal8Bit());
     }
 
-    ui->lineEditMsg->setText("");
+    //ui->lineEditMsg->setText("");
 }
 
 void Dialog::recvData(const QString &ip, const QByteArray &data)

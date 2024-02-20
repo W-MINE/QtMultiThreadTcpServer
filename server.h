@@ -15,7 +15,7 @@ public:
     ~Server();
 
 private:
-    void incomingConnection(int sockDesc);
+    void incomingConnection(qintptr sockDesc);
 
 private slots:
     void clientDisconnected(int sockDesc);
